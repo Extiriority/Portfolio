@@ -1,4 +1,4 @@
-<div class="flex justify-center space-x-5">
+<div class="flex justify-center absolute w-full top-0 z-50 space-x-5">
     <a href="#about"> About</a>
     <a href="#experience"> Experience</a>
     <a href="#work"> Work</a>
