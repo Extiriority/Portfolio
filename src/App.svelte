@@ -1,20 +1,41 @@
 <script lang="ts">
-  import logo from './assets/svelte.png'
-  import Navbar from "./lib/Navbar.svelte";
+   import { onMount } from "svelte";
+　　import Navbar from "./lib/Navbar.svelte";
+　　import Intro from "./lib/Intro.svelte";
+   import About from "./lib/About.svelte";
+   import Footer from "./lib/Footer.svelte";
+
+   let isPageLoaded = false;
+
+   onMount(() => {
+       setTimeout(() => {
+           isPageLoaded = true;
+       }, 800)
+   });
 </script>
 
-<Navbar/>
-<main>
-  <img src={logo} alt="Svelte Logo" />
-  <h1 class="font-extrabold text-9xl"
-      id="about">
-    About
-  </h1>
-  <h1 class="font-extrabold text-9xl">Experience</h1>
-  <h1 class="font-extrabold text-9xl">Work</h1>
-  <h1 class="font-extrabold text-9xl">Contact</h1>
-  hmm
-  <!--Metropolis Fonts-->
+
+<main class="bg-bkg selection:bg-accent selection:text-bkg ">
+    {#if !isPageLoaded}
+        <div class="min-h-screen flex flex-col justify-evenly items-center relative">
+            <img src="/src/assets/Loader.svg" alt="spinner">
+        </div>
+    {:else }
+        <div id="parallax">
+            <Navbar/>
+            <header class="min-h-screen flex flex-col justify-evenly items-center relative">
+                <Intro/>
+            </header>
+            <main class="relative mt-16 sm:mt-24 lg:mt-20 pb-16 -mb-16 grid gap-16 sm:gap-24 lg:gap-40 overflow-hidden">
+                <div id="about">
+                    <About/>
+                </div>
+            </main>
+            <footer>
+                <Footer/>
+            </footer>
+        </div>
+    {/if}
 </main>
 
 
