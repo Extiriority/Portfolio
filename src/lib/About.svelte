@@ -1,26 +1,26 @@
 <script lang="ts">
-    let today = new Date(), currentHour = today.getHours(), greeting
+    import { fly } from 'svelte/transition';
+    import { inview } from 'svelte-inview';
 
-    if (currentHour < 12) {
-        greeting = "Good morning"
-    } else if (currentHour < 18) {
-        greeting = "Good afternoon"
-    } else {
-        greeting = "Good evening"
-    }
+    let isInView;
 </script>
 
-<div class="container w-3/5 w-full py-4">
-    <div class="text-touch">
-        {greeting}, my name is
-    </div>
-    <div class="font-bold text-accent text-4xl md:text-5xl lg:text-6xl pt-3">
-        &#123 Giang Trang &#125
-    </div>
-    <div class="font-bold text-muted text-3xl md:text-5xl lg:text-6xl pt-5">
-        I build things for the web.
-    </div>
-    <div class="text-muted pt-8 sm:w-3/4 lg:w-3/4 2xl:1/2">
-        I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible portfolio to show of my work.
-    </div>
-</div>
+<section aria-labelledby="about" class="container grid gap-4 text-center max-w-prose"
+        use:inview={{ unobserveOnEnter: true, rootMargin: '-5%' }}
+         on:change={({ detail }) => {
+         isInView = detail.inView;
+}}>
+    {#if isInView}
+        <small in:fly={{delay: 200, y: 40, duration: 300}} class="tracking-widest text-accent uppercase">
+            The standard Lorem Ipsum passage, used since the 1500s
+        </small>
+        <h2 in:fly={{delay: 250, y: 40, duration: 300}} id="about" class="text-3xl font-bold tracking-wide">
+            Lorem ipsum
+        </h2>
+        <p in:fly={{delay: 300, y: 40, duration: 300}} class="text-muted">
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    {/if}
+</section>

@@ -5,9 +5,10 @@ module.exports = {
         extend: {
             colors: {
                 bkg:    "#0f0326",
-                muted:  "#98999e",
-                accent: "#8d8dc9",
-                touch:  "#6deaba",
+                muted:  "#b6b0a7",
+                accent: "#8ca3cb",
+                touch:  "#83eac3",
+                ease:   "#1e0a44"
             },
             container: {
                 center: true,
