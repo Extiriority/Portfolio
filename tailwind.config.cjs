@@ -4,15 +4,15 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                bkg:    "#171819",
-                muted:  "#C9CBCF",
-                accent: "#8A84E2",
-                touch:  "#F6C0D0",
+                bkg:    "#0f0326",
+                muted:  "#98999e",
+                accent: "#8d8dc9",
+                touch:  "#6deaba",
             },
             container: {
                 center: true,
                 padding: {
-                    DEFAULT: '1rem',
+                    DEFAULT: '1.5rem',
                     sm: '2rem',
                     lg: '4rem',
                     xl: '5rem',
@@ -31,7 +31,7 @@ module.exports = {
                 "3xl": ["clamp(1.89rem, calc(1.71rem + 0.89vw), 2.34rem)", "1.2"],
                 "4xl": ["clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem)", "1.1"],
                 "5xl": ["clamp(2.72rem, calc(2.36rem + 1.83vw), 3.66rem)", "1"],
-                "6xl": ["clamp(3.27rem, calc(2.75rem + 2.56vw), 4.58rem)", "1"],
+                "6xl": ["clamp(3.27rem, calc(2.45rem + 2.56vw), 4.58rem)", "1"],
             }
         },
     },
