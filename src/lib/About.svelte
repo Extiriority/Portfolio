@@ -5,7 +5,7 @@
     let isInView;
 </script>
 
-<section aria-labelledby="about" class="container grid gap-4 text-center w-full w-3/5"
+<section class="container grid gap-4 text-center w-full w-3/5"
         use:inview={{ unobserveOnEnter: true, rootMargin: '-5%' }}
          on:change={({ detail }) => {
          isInView = detail.inView;
@@ -14,7 +14,7 @@
         <small in:fly={{delay: 200, y: 40, duration: 300}} class="tracking-widest text-accent uppercase">
             The standard Lorem Ipsum passage, used since the 1500s
         </small>
-        <h2 in:fly={{delay: 250, y: 40, duration: 300}} id="about" class="text-3xl font-bold tracking-wide">
+        <h2 in:fly={{delay: 250, y: 40, duration: 300}} class="text-3xl font-bold tracking-wide">
             Lorem ipsum
         </h2>
         <p in:fly={{delay: 300, y: 40, duration: 300}} class="text-muted">
