@@ -1,10 +1,9 @@
 <script lang="ts">
     import { fly } from "svelte/transition";
-
 </script>
 
-<div class="flex justify-end absolute pr-9 w-full top-0 z-50 space-x-7 text-md text-muted">
-    <div class="flex justify-center space-x-5 py-7">
+<div class="flex justify-end absolute pr-12 w-full top-0 z-50 space-x-7 text-md text-muted">
+    <div class="flex justify-center space-x-5 py-10">
         <a in:fly="{{delay: 100, y: -20, duration: 400 }}"
            class="flex hover:text-touch"
            href="#about">
@@ -39,7 +38,8 @@
         </a>
     </div>
     <button in:fly="{{delay: 550, y: -20, duration: 400 }}"
-            class="text-touch border rounded-sm border-touch px-3 my-5 hover:bg-ease">
+            class="text-touch border rounded-sm border-touch px-3 my-8 hover:bg-ease"
+            onclick="window.open('/src/assets/Resume.pdf','blank')">
         Resume
     </button>
 </div>

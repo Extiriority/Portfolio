@@ -5,7 +5,7 @@
     let isInView;
 </script>
 
-<section aria-labelledby="about" class="container grid gap-4 text-center max-w-prose"
+<section aria-labelledby="about" class="container grid gap-4 text-center w-full w-3/5"
         use:inview={{ unobserveOnEnter: true, rootMargin: '-5%' }}
          on:change={({ detail }) => {
          isInView = detail.inView;

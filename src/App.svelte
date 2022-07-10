@@ -27,7 +27,9 @@
                 <Intro/>
             </header>
             <main class="relative mt-16 sm:mt-24 lg:mt-20 pb-16 -mb-16 grid gap-16 sm:gap-24 lg:gap-40 overflow-hidden">
-                <About id="about"/>
+                <div id="about">
+                    <About/>
+                </div>
             </main>
             <footer>
                 <Footer/>
