@@ -8,9 +8,7 @@
    let isPageLoaded = false;
 
    onMount(() => {
-       setTimeout(() => {
-           isPageLoaded = true;
-       }, 800)
+           isPageLoaded = true
    });
 </script>
 
