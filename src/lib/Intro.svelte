@@ -19,9 +19,9 @@
         {greeting}, my name is
     </div>
     <div in:fly={{delay: 800, x: -40, duration: 250}} class="flex pt-3 text-4xl md:text-5xl lg:text-6xl">
-        <div class="text-touch font-thin">&#123</div>
+        <div class="text-touch font-thin animate-pulse">&#123</div>
         <div class="font-bold text-accent px-3">Giang Trang</div>
-        <div class="text-touch font-thin">&#125</div>
+        <div class="text-touch font-thin animate-pulse">&#125</div>
     </div>
     <div in:fly={{delay: 1000, x: -40, duration: 250}} class="font-bold text-muted text-3xl md:text-5xl lg:text-6xl pt-5">
         I build things for the web.
