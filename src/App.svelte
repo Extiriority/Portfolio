@@ -11,6 +11,13 @@
    onMount(() => {
            isPageLoaded = true
    });
+
+   history.scrollRestoration = "manual";
+
+   window.onbeforeunload = function () {
+       isPageLoaded = false
+       window.scrollTo(0,0);
+   };
 </script>
 
 
