@@ -5,14 +5,12 @@
     let isInView;
 </script>
 
-<section class="container grid gap-4 text-center w-full w-3/5"
+<section class="grid gap-4 text-center pb-20"
         use:inview={{ unobserveOnEnter: true, rootMargin: '-5%' }}
          on:change={({ detail }) => {
          isInView = detail.inView;
-}}>
+    }}>
     <div class="min-h-[300px]">
-
-
         {#if isInView}
             <p in:fly={{delay: 200, y: 40, duration: 300}} class="tracking-widest text-xs font-light text-accent uppercase">
                 The standard Lorem Ipsum passage, used since the 1500s

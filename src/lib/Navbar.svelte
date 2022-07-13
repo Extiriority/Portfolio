@@ -25,7 +25,7 @@
         </ol>
     </div>
     <button in:fly="{{delay: 550, y: -20, duration: 400 }}"
-            class=" text-touch border rounded-sm border-touch px-3 py-1 my-9 hover:bg-ease hover:my-6 active:scale-90 ease-in-out duration-200"
+            class=" text-touch border rounded-sm border-touch px-4 py-1 my-9 hover:bg-ease hover:my-6 active:scale-90 ease-in-out duration-200"
             onclick="window.open('/src/assets/Resume.pdf','blank')">
         Resume
     </button>

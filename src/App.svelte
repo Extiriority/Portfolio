@@ -3,6 +3,7 @@
 　　import Navbar from "./lib/Navbar.svelte";
 　　import Intro from "./lib/Intro.svelte";
    import About from "./lib/About.svelte";
+   import Contact from "./lib/Contact.svelte";
    import Footer from "./lib/Footer.svelte";
 
    let isPageLoaded = false;
@@ -24,9 +25,12 @@
             <header class="min-h-screen flex flex-col justify-evenly items-center relative">
                 <Intro/>
             </header>
-            <main class="relative mt-16 sm:mt-24 lg:mt-20 pb-16 -mb-16 grid gap-16 sm:gap-24 lg:gap-40 overflow-hidden">
+            <main class="relative container w-full md:w-4/5 lg:w-3/5 mt-16 sm:mt-24 lg:mt-20 pb-16 -mb-16 grid gap-16 sm:gap-24 lg:gap-40 overflow-hidden">
                 <div id="About">
                     <About/>
+                </div>
+                <div id="Contact">
+                    <Contact/>
                 </div>
             </main>
             <footer>
