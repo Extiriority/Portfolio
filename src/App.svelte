@@ -5,6 +5,8 @@
    import About from "./lib/About.svelte";
    import Contact from "./lib/Contact.svelte";
    import Footer from "./lib/Footer.svelte";
+   import Experience from "./lib/Experience.svelte";
+   import Work from "./lib/Work.svelte";
 
    let isPageLoaded = false;
 
@@ -36,6 +38,12 @@
             <main class="relative container w-full md:w-4/5 lg:w-3/5 mt-16 sm:mt-24 lg:mt-20 pb-16 -mb-16 grid gap-16 sm:gap-24 lg:gap-40 overflow-hidden">
                 <div id="About">
                     <About/>
+                </div>
+                <div id="Experience">
+                    <Experience/>
+                </div>
+                <div id="Work">
+                    <Work/>
                 </div>
                 <div id="Contact">
                     <Contact/>
