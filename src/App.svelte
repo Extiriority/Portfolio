@@ -3,10 +3,11 @@
 　　import Navbar from "./lib/Navbar.svelte";
 　　import Intro from "./lib/Intro.svelte";
    import About from "./lib/About.svelte";
-   import Contact from "./lib/Contact.svelte";
-   import Footer from "./lib/Footer.svelte";
    import Experience from "./lib/Experience.svelte";
    import Work from "./lib/Work.svelte";
+   import Contact from "./lib/Contact.svelte";
+   import Footer from "./lib/Footer.svelte";
+
 
    let isPageLoaded = false;
 
