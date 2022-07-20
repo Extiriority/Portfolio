@@ -16,8 +16,7 @@
             <div aria-hidden="true" class="m-auto h-0.5 w-6 rounded bg-touch transition duration-300"></div>
             <div aria-hidden="true" class="m-auto mt-2 h-0.5 w-6 rounded bg-touch transition duration-300"></div>
         </label>
-        <ol class="fixed ease-in-out left-0 right-0 min-h-screen bg-bkg space-y-4 p-4 transform translate-x-full md:relative md:flex md:min-h-0 md:space-y-0 md:space-x-10 md:p-0 md:translate-x-0"
-        >
+        <ol class="fixed ease-in-out left-0 right-0 min-h-screen bg-bkg space-y-4 p-4 transform translate-x-full md:relative md:flex md:min-h-0 md:space-y-0 md:space-x-10 md:p-0 md:translate-x-0">
             {#each links as link}
                 <li>
                     <a in:fly="{{delay: link.delayTime, y: -20, duration: 400 }}"
