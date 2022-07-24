@@ -4,7 +4,7 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                bkg:    "#0f0326",
+                bkg:    "#10002b",
                 muted:  "#c2bcb3",
                 accent: "#bbcbd5",
                 touch:  "#83eac3",
@@ -19,6 +19,9 @@ module.exports = {
                     xl: '5rem',
                     '2xl': '6rem'
                 },
+            },
+            screens: {
+               'phone': '380px'
             },
             fontFamily: {
                metropolis: ["Metropolis", "sans-serif"]
