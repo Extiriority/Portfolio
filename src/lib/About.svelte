@@ -10,7 +10,7 @@
          on:change={({ detail }) => {
          isInView = detail.inView;
     }}>
-    <div class="min-h-[300px] pt-28">
+    <div class="min-h-[300px] pt-24">
         {#if isInView}
             <header in:fly={{delay: 200, y: 40, duration: 300}} class="tracking-widest text-base font-light text-touch uppercase">
                 I. About
