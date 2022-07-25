@@ -1,6 +1,7 @@
 <script lang="ts">
    import { onMount } from "svelte"
-   import { menu } from "./lib/state/stores";
+   import { menu } from "./lib/state/stores"
+   import Loader from "/src/assets/Loader.svg"
 　　import Navbar from "./lib/Navbar.svelte"
 　　import Intro from "./lib/Intro.svelte"
    import About from "./lib/About.svelte"
@@ -29,7 +30,7 @@
 <main class="bg-bkg selection:bg-accent selection:text-bkg">
     {#if !isPageLoaded}
         <div class="min-h-screen flex flex-col justify-evenly items-center relative ">
-            <img src="/src/assets/Loader.svg" alt="spinner">
+            <img src={Loader} alt="spinner">
         </div>
     {:else }
         <div id="parallax">
