@@ -22,11 +22,11 @@
                 So far I have reached the third year of my Fontys university of applied sciences for ICT bachelor in the field of software engineering.
                 So at this moment I am doing an internship at CPMFactory in my fifth semester but you can always contact me for future endeavors!
             </p>
-            <a in:fly="{{delay: 550, y: -20, duration: 400 }}"
+            <button in:fly="{{delay: 550, y: -20, duration: 400 }}"
                     class=" text-touch border rounded-sm border-touch px-5 py-3 hover:bg-ease hover:py-5 ease-in-out duration-200"
                     onclick="window.open('mailto:VHG.Trang@gmail.com')">
                 Mail me
-            </a>
+            </button>
         {/if}
     </div>
 </section>
