@@ -1,5 +1,5 @@
 # Portfolio website
-<a href="(https://github.com/Extiriority/CollegeNetworkBackend"><img align="right" src="https://catalog.app.fhict.nl/images/menuGlobal.svg" width=27%></a>
+<a href="(https://github.com/Extiriority/Portfolio"><img align="right" src="https://github.com/Extiriority/Portfolio/blob/main/src/assets/Logo.png" width=27%></a>
 
 This summer I will be making a portfolio website made out of the powerful progressive web app Svelte + Vite.
 ## Goals
