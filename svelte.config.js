@@ -1,4 +1,5 @@
 import sveltePreprocess from 'svelte-preprocess'
+import adapter from '@sveltejs/adapter-cloudflare'
 
 export default {
   // Consult https://github.com/sveltejs/svelte-preprocess
@@ -6,5 +7,8 @@ export default {
   preprocess:
       sveltePreprocess({
         postcss: true,
-      })
+      }),
+    kit: {
+      adapter: adapter({}),
+    }
 }
