@@ -2,7 +2,7 @@
     import { fly } from "svelte/transition"
     import { menu } from "./state/stores";
 
-    const logo = '/src/assets/Logo.png'
+    const logo = '/src/assets/Logo-1b30d987.png'
 
     let links = [
         {Id: "I", delayTime: 100, text: "About"},
@@ -23,7 +23,7 @@
     <div class="flex justify-between mx-auto items-center pl-7 md:pl-10 pr-52 md:pr-7 pt-4">
         <img in:fly="{{delay: 50, y: -20, duration: 400 }}" src={logo} alt="Logo" width="60" height="60">
         <input type="checkbox" id="hamburger" class="peer" on:click={toggleNavBar} hidden>
-        <label for="hamburger" class="fixed top-0 bottom-0 right-0 w-28 pt-10 w-full peer-checked:hamburger z-50 md:hidden">
+        <label for="hamburger" class="fixed top-0 bottom-0 right-0 pt-10 w-28 peer-checked:hamburger z-50 md:hidden">
             <div aria-hidden="true" class="m-auto h-0.5 w-6 rounded bg-touch transition duration-300 {show ? '-rotate-45 translate-y-1.5' : null }"></div>
             <div aria-hidden="true" class="m-auto mt-2 h-0.5 w-6 rounded bg-touch transition duration-300 {show ? 'rotate-45 -translate-y-1' : null }"></div>
         </label>
