@@ -22,10 +22,9 @@ import { fly } from 'svelte/transition'
 <div class="bg-bkg text-md text-muted pt-1">
     <div class="flex justify-between mx-auto items-center pl-7 md:pl-10 pr-52 md:pr-7 pt-4">
         <img in:fly="{{delay: 50, y: -20, duration: 400 }}" src={logo} alt="Logo" width="60" height="60">
-        <input type="checkbox" id="hamburger" class="peer" on:click={toggleNavBar} hidden>
         <label for="hamburger" class="fixed top-0 bottom-0 right-0 pt-10 w-28 peer-checked:hamburger z-50 md:hidden">
-            <div aria-hidden="true" class="m-auto h-0.5 w-6 rounded bg-touch transition duration-300 {show ? '-rotate-45 translate-y-1.5' : null }"></div>
-            <div aria-hidden="true" class="m-auto mt-2 h-0.5 w-6 rounded bg-touch transition duration-300 {show ? 'rotate-45 -translate-y-1' : null }"></div>
+            <span aria-hidden="true" class="m-auto h-0.5 w-6 rounded bg-touch transition duration-300 {show ? '-rotate-45 translate-y-1.5' : null }"></span>
+            <span aria-hidden="true" class="m-auto mt-2 h-0.5 w-6 rounded bg-touch transition duration-300 {show ? 'rotate-45 -translate-y-1' : null }"></span>
         </label>
         <nav class="fixed flex justify-center items-center top-0 bottom-0 z-30 bg-ease p-8 w-full phone:w-9/12 text-2xl md:shadow-none ease-in-out duration-300 md:justify-end md:bg-bkg md:text-base md:wd-auto md:static {show ? 'right-0 shadow-xl shadow-ease' : '-right-full'}">
             <ol class="absolute flex items-center flex-col space-y-12 md:flex-row md:space-x-10 md:space-y-0">
@@ -44,7 +43,7 @@ import { fly } from 'svelte/transition'
                 {/each}
                 <li>
                     <a in:fly="{{delay: 550, y: -20, duration: 400 }}"
-                            class="text-touch border rounded-md border-touch px-4 -my-8 py-1 hover:bg-ease hover:py-3 active:scale-90 ease-in-out duration-200"
+                            class="text-touch rounded-md border-touch px-4 -my-8 py-1 hover:bg-ease hover:border-b hover:border-t hover:py-2 active:scale-90 ease-in-out duration-200"
                             href="{resume}" target="_blank">
                         Resume
                     </a>

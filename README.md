@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/Extiriority/Portfolio.svg?style=svg)](https://circleci.com/gh/Extiriority/Portfolio)
 # Portfolio website
 <a href="(https://github.com/Extiriority/Portfolio"><img align="right" src="https://github.com/Extiriority/Portfolio/blob/main/src/assets/Logo.png" width=27%></a>
 
