@@ -1,8 +1,8 @@
 <script lang="ts">
-import { fly } from "svelte/transition"
-    import { menu } from "./state/stores";
+import { fly } from 'svelte/transition'
+    import { menu } from './state/stores'
     import logo from '../assets/logo.png'
-    import resume from '../assets/Resume.png'
+    import resume from '../assets/resume.png'
 
     let links = [
         {Id: "I", delayTime: 100, text: "About"},
