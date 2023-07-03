@@ -24,8 +24,8 @@ import { fly } from 'svelte/transition'
         <img in:fly="{{delay: 50, y: -20, duration: 400 }}" src={logo} alt="Logo" width="60" height="60">
         <input type="checkbox" id="hamburger" class="peer" on:click={toggleNavBar} hidden>
         <label for="hamburger" class="fixed top-0 bottom-0 right-0 pt-10 w-28 peer-checked:hamburger z-50 md:hidden">
-            <span aria-hidden="true" class="m-auto h-0.5 w-6 rounded bg-touch transition duration-300 {show ? '-rotate-45 translate-y-1.5' : null }"></span>
-            <span aria-hidden="true" class="m-auto mt-2 h-0.5 w-6 rounded bg-touch transition duration-300 {show ? 'rotate-45 -translate-y-1' : null }"></span>
+            <div aria-hidden="true" class="m-auto h-0.5 w-6 rounded bg-touch transition duration-300 {show ? '-rotate-45 translate-y-1.5' : null }"></div>
+            <div aria-hidden="true" class="m-auto mt-2 h-0.5 w-6 rounded bg-touch transition duration-300 {show ? 'rotate-45 -translate-y-1' : null }"></div>
         </label>
         <nav class="fixed flex justify-center items-center top-0 bottom-0 z-30 bg-ease p-8 w-full phone:w-9/12 text-2xl md:shadow-none ease-in-out duration-300 md:justify-end md:bg-bkg md:text-base md:wd-auto md:static {show ? 'right-0 shadow-xl shadow-ease' : '-right-full'}">
             <ol class="absolute flex items-center flex-col space-y-12 md:flex-row md:space-x-10 md:space-y-0">
