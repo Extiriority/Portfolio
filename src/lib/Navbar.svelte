@@ -1,8 +1,8 @@
 <script lang="ts">
-    import { fly } from "svelte/transition"
-    import { menu } from "./state/stores";
-
-    const logo = '/src/assets/Logo.png'
+import { fly } from 'svelte/transition'
+    import { menu } from './state/stores'
+    import logo from '../assets/logo.png'
+    import resume from '../assets/resume.png'
 
     let links = [
         {Id: "I", delayTime: 100, text: "About"},
@@ -22,8 +22,7 @@
 <div class="bg-bkg text-md text-muted pt-1">
     <div class="flex justify-between mx-auto items-center pl-7 md:pl-10 pr-52 md:pr-7 pt-4">
         <img in:fly="{{delay: 50, y: -20, duration: 400 }}" src={logo} alt="Logo" width="60" height="60">
-        <input type="checkbox" id="hamburger" class="peer" on:click={toggleNavBar} hidden>
-        <label for="hamburger" class="fixed top-0 bottom-0 right-0 w-28 pt-10 w-full peer-checked:hamburger z-50 md:hidden">
+        <label for="hamburger" class="fixed top-0 bottom-0 right-0 pt-10 w-28 peer-checked:hamburger z-50 md:hidden">
             <span aria-hidden="true" class="m-auto h-0.5 w-6 rounded bg-touch transition duration-300 {show ? '-rotate-45 translate-y-1.5' : null }"></span>
             <span aria-hidden="true" class="m-auto mt-2 h-0.5 w-6 rounded bg-touch transition duration-300 {show ? 'rotate-45 -translate-y-1' : null }"></span>
         </label>
@@ -43,11 +42,11 @@
                     </li>
                 {/each}
                 <li>
-                    <button in:fly="{{delay: 550, y: -20, duration: 400 }}"
+                    <a in:fly="{{delay: 550, y: -20, duration: 400 }}"
                             class="text-touch rounded-md border-touch px-4 -my-8 py-1 hover:bg-ease hover:border-b hover:border-t hover:py-2 active:scale-90 ease-in-out duration-200"
-                            onclick="window.open('/src/assets/Resume.pdf','blank')">
+                            href="{resume}" target="_blank">
                         Resume
-                    </button>
+                    </a>
                 </li>
             </ol>
         </nav>
