@@ -1,7 +1,6 @@
 <script lang="ts">
    import { onMount } from "svelte"
    import { menu } from "./lib/state/stores"
-   import Loader from "/src/assets/Loader.svg"
 　　import Navbar from "./lib/Navbar.svelte"
 　　import Intro from "./lib/Intro.svelte"
    import About from "./lib/About.svelte"
@@ -9,12 +8,15 @@
    import Work from "./lib/Work.svelte"
    import Contact from "./lib/Contact.svelte"
    import Footer from "./lib/Footer.svelte"
+   import Spinner from "./lib/components/Spinner.svelte"
 
    let isPageLoaded = false;
 
-   onMount(() => {
-           isPageLoaded = true
-   });
+    onMount(() => {
+         setTimeout(() => {
+              isPageLoaded = true
+         }, 200);
+    })
 
    history.scrollRestoration = "manual";
 
@@ -22,17 +24,11 @@
        isPageLoaded = false
        window.scrollTo(0,0);
    };
-
-   /*https://svelte.dev/repl/a461eb2587e64d73b6328f230ea1b3a1?version=3.49.0*/
 </script>
 
 
 <main class="bg-bkg selection:bg-accent selection:text-bkg">
-    {#if !isPageLoaded}
-        <div class="min-h-screen flex flex-col justify-evenly items-center relative ">
-            <img src={Loader} alt="spinner">
-        </div>
-    {:else }
+    {#if isPageLoaded}
         <div id="parallax">
             <Navbar/>
             <div class="{$menu ? 'ease-in-out duration-100 blur-sm md:blur-0' : null}">
@@ -58,6 +54,8 @@
                 </footer>
             </div>
         </div>
+    {:else }
+        <Spinner/>
     {/if}
 </main>
 

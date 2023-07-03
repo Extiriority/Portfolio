@@ -1,8 +1,8 @@
 <script lang="ts">
-    import { fly } from "svelte/transition"
+import { fly } from "svelte/transition"
     import { menu } from "./state/stores";
-
-    const logo = '/src/assets/Logo-1b30d987.png'
+    import logo from '../assets/logo.png'
+    import resume from '../assets/Resume.png'
 
     let links = [
         {Id: "I", delayTime: 100, text: "About"},
@@ -43,11 +43,11 @@
                     </li>
                 {/each}
                 <li>
-                    <button in:fly="{{delay: 550, y: -20, duration: 400 }}"
+                    <a in:fly="{{delay: 550, y: -20, duration: 400 }}"
                             class="text-touch border rounded-md border-touch px-4 -my-8 py-1 hover:bg-ease hover:py-3 active:scale-90 ease-in-out duration-200"
-                            onclick="window.open('/src/assets/Resume.pdf','blank')">
+                            href="{resume}" target="_blank">
                         Resume
-                    </button>
+                    </a>
                 </li>
             </ol>
         </nav>
