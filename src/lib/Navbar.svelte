@@ -29,7 +29,7 @@
     }
 </script>
 
-<div class="md:fixed md:w-full z-50 bg-bkg text-md text-muted duration-200 pt-1" id="navbar">
+<div class="md:fixed md:w-full z-50 bg-bkg md:bg-opacity-60 text-md text-muted duration-200 pt-1" id="navbar">
     <div class="flex justify-between mx-auto items-center pl-7 md:pl-10 pr-52 md:pr-7 pt-4">
         <img in:fly="{{delay: 50, y: -20, duration: 400 }}" src={logo} alt="Logo" width="60" height="60">
         <input type="checkbox" id="hamburger" class="peer" on:click={toggleNavBar} hidden>
@@ -37,7 +37,7 @@
             <div aria-hidden="true" class="m-auto h-0.5 w-6 rounded bg-touch transition duration-300 {show ? '-rotate-45 translate-y-1.5' : null }"></div>
             <div aria-hidden="true" class="m-auto mt-2 h-0.5 w-6 rounded bg-touch transition duration-300 {show ? 'rotate-45 -translate-y-1' : null }"></div>
         </label>
-        <nav class="fixed flex justify-center items-center top-0 bottom-0 z-30 bg-ease p-8 w-full phone:w-9/12 text-2xl md:shadow-none ease-in-out duration-300 md:justify-end md:bg-bkg md:text-base md:wd-auto md:static {show ? 'right-0 shadow-xl shadow-ease' : '-right-full'}">
+        <nav class="fixed flex justify-center items-center top-0 bottom-0 z-30 bg-ease md:bg-transparent p-8 w-full phone:w-9/12 text-2xl md:shadow-none ease-in-out duration-300 md:justify-end md:text-base md:wd-auto md:static {show ? 'right-0 shadow-xl shadow-ease' : '-right-full'}">
             <ol class="absolute flex items-center flex-col space-y-12 md:flex-row md:space-x-10 md:space-y-0">
                 {#each links as link}
                     <li>
