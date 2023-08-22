@@ -20,17 +20,22 @@
     }
 
     let prevPos = Number.MAX_SAFE_INTEGER;
+    let isScrolledToTop = true;
 
     window.onscroll = function() {
         const currentPos = window.scrollY;
+        isScrolledToTop = currentPos === 0;
         document.getElementById("navbar").style.top = prevPos > currentPos ? "0" : "-85px"
 
         prevPos = currentPos;
     }
 </script>
 
-<div class="md:fixed md:w-full z-50 bg-bkg md:bg-opacity-60 text-md text-muted duration-200 pt-1" id="navbar">
-    <div class="flex justify-between mx-auto items-center pl-7 md:pl-10 pr-52 md:pr-7 pt-4">
+<div class="md:fixed md:w-full z-50 bg-bkg md:bg-opacity-40 md:backdrop-blur-sm md:shadow-lg shadow-indigo-500/50 text-md text-muted duration-200 pt-1"
+     id="navbar"
+     class:initial-style="{!isScrolledToTop}"
+     class:scrolled-style="{isScrolledToTop}">
+    <div class="flex justify-between mx-auto items-center pl-7 md:pl-10 pr-52 md:pr-7 px-4">
         <img in:fly="{{delay: 50, y: -20, duration: 400 }}" src={logo} alt="Logo" width="60" height="60">
         <input type="checkbox" id="hamburger" class="peer" on:click={toggleNavBar} hidden>
         <label for="hamburger" class="fixed top-0 bottom-0 right-0 pt-10 w-28 h-20 peer-checked:hamburger z-50 md:hidden">
@@ -66,3 +71,15 @@
         </nav>
     </div>
 </div>
+
+<style>
+    .initial-style {
+        padding: 0;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .scrolled-style {
+        padding: 20px;
+        box-shadow: none;
+    }
+</style>
