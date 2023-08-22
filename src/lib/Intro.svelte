@@ -6,17 +6,17 @@
     let greeting
 
     if (currentHour < 12) {
-        greeting = "Good morning"
+        greeting = "morning"
     } else if (currentHour < 18) {
-        greeting = "Good afternoon"
+        greeting = "afternoon"
     } else {
-        greeting = "Good evening"
+        greeting = "evening"
     }
 </script>
 
 <div class="container py-4">
     <div in:fly={{delay: 600, x: -40, duration: 250}} class="text-touch">
-        {greeting}, my name is
+        Good {greeting}, my name is
     </div>
     <div in:fly={{delay: 800, x: -40, duration: 250}} class="flex pt-3 text-5xl md:text-5xl lg:text-6xl">
         <div class="text-touch sm:font-thin animate-pulse">&#123</div>
