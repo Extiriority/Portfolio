@@ -20,7 +20,8 @@
             </h2>
             <p in:fly={{delay: 300, y: 40, duration: 300}} class="text-muted 2xl:px-52 pb-12">
                 So far I have reached the third year of my Fontys university of applied sciences for ICT bachelor in the field of software engineering.
-                So at this moment I am doing an internship at CPMFactory in my fifth semester but you can always contact me for future endeavors!
+                At this moment, I have done my internship at CPMLive and did a semester course on Enterprise software engineering with microservices and
+                now doing advanved gamedesign but you can always contact me for future endeavors!
             </p>
         {/if}
     </div>
