@@ -19,7 +19,7 @@
         menu.set(show)
     }
 
-    let prevPos = window.scrollY;
+    let prevPos = Number.MAX_SAFE_INTEGER;
 
     window.onscroll = function() {
         const currentPos = window.scrollY;
