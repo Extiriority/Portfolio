@@ -35,7 +35,7 @@
                 <header class="min-h-screen flex flex-col justify-evenly items-center relative bottom-14">
                     <Intro/>
                 </header>
-                <main class="relative container w-full md:w-4/5 lg:w-3/5 mt-16 sm:mt-24 lg:mt-20 pb-16 -mb-16 grid gap-16 sm:gap-24 lg:gap-40 overflow-hidden">
+                <main class="relative container w-full md:w-4/5 lg:w-3/5 mt-16 sm:mt-24 lg:mt-20 pb-16 -mb-16 gap-16 sm:gap-24 lg:gap-40 overflow-hidden">
                     <div id="About">
                         <About/>
                     </div>
