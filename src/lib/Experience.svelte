@@ -50,7 +50,7 @@
             {#each projects as project (project.id)}
                 <div in:fly={{delay: 250, y: 40, duration: 300}} class="relative flex bg-bkg shadow-lg rounded-t-3xl overflow-hidden transform transition duration-300 hover:scale-110 hover:rounded-3xl hover:shadow-xl">
                     {#if project.isVideo}
-                        <video class="absolute opacity-20 hover:opacity-100 transition ease-in-out object-cover h-[300px] md:h-[350px]" src={project.banner} playsinline autoplay muted loop></video>
+                        <video class="absolute opacity-20 hover:opacity-100 transition ease-in-out object-cover h-[300px] md:h-[350px]" src={project.banner} playsinline loop autoplay muted></video>
                     {:else}
                         <img class="absolute opacity-20 hover:opacity-100 transition ease-in-out object-cover h-[280px] md:h-[300px]" src={project.banner} alt={project.title}>
                     {/if}
