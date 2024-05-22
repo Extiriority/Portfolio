@@ -19,12 +19,12 @@
                 Contact me
             </h2>
             <p in:fly={{delay: 300, y: 40, duration: 300}} class="text-muted 2xl:px-52 pb-12">
-                So far I have reached the third year of my Fontys university of applied sciences for ICT bachelor in the field of software engineering.
-                At this moment, I have done my internship at CPMLive and did a semester course on Enterprise software engineering with microservices and
-                now doing advanved gamedesign but you can always contact me for future endeavors!
+                So far I have reached my final year of my Fontys University for Bachelor of Science (BSc.) in the field of Software Engineering.
+                At this moment, I have done my internship at CPMLive and did a semester course on Enterprise software engineering with microservices,
+                advanced Gamedesign and now Exchange abroad in Japan, but you can always contact me for future endeavors!
             </p>
             <button in:fly="{{delay: 550, y: -20, duration: 400 }}"
-                    class=" text-touch border rounded-sm border-touch px-5 py-3 hover:bg-ease hover:px-6 ease-in-out duration-200"
+                    class="text-touch border rounded-sm border-touch px-5 py-3 hover:bg-ease hover:px-6 ease-in-out duration-200"
                     onclick="window.open('mailto:VHG.Trang@gmail.com')">
                 Mail me
             </button>
