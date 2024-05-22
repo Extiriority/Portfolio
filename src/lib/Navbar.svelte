@@ -48,7 +48,7 @@
                     <li>
                         <a in:fly="{{delay: link.delayTime, y: -20, duration: 400 }}"
                            on:click={toggleNavBar}
-                           class="flex hover:text-touch duration-200 border-touch hover:border-b ease-in-out "
+                           class="flex hover:text-touch duration-200 border-touch hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-1 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-touch before:absolute before:left-0 before:bottom-0"
                            href="#{link.text}">
                             <div class="md:flex text-center py-1">
                                 <span class="text-touch md:pr-1.5">{link.Id}.</span>
