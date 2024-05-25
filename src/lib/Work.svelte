@@ -13,9 +13,9 @@
     let projects = [
         {
             id: 1,
-            title: "CM.com Multi-Channel Messaging",
+            title: "CM.com Validation of MO/MT Messages Workflow",
             body: "Developed a multi-channel API messaging platform that allows businesses to communicate with their customers with multi-media and markdown through various channels such as Meta, Instagram, WhatsApp, and X.",
-            stack: "Java, Kotlin, PostgresSQL Next.js, TypeScript, TailwindCSS, Docker",
+            stack: "Kotlin, PostgresSQL Next.js, TypeScript, TailwindCSS, Docker, CM Business API and AURORA design sheet",
             banner: CMBanner,
             isVideo: false,
             logo: CM,
@@ -24,9 +24,9 @@
         },
         {
             id: 2,
-            title: "Fontys Internal Post Platform (IPost)",
+            title: "Fontys Internal Post Platform (FIPost)",
             body: "An opensource project that aims to modernise the internal post system of Fontys tracking and scanning packages. This is a multi year long term project with me as the head maintainer.",
-            stack: "C#, .NET6, postgresSQL, VueJS, TypeScript, SCSS, Azure, K8s, rabbitMQ, Cypress, SonarCloud",
+            stack: "C#, .NET6, postgre  SQL, Vue.js, TypeScript, SCSS, Azure, K8s, rabbitMQ, Cypress, SonarCloud",
             banner: iPostBanner,
             isVideo: true,
             logo: iPost,
