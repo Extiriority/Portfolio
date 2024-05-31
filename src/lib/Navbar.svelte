@@ -3,7 +3,7 @@
     import { menu } from './state/stores'
     import logo from '../assets/logo.png'
     import popout from '../assets/popout.svg'
-    import resume from '../assets/resume.png'
+    import resume from '../assets/ResumeWeb-Giang-Trang.pdf'
 
     let links = [
         {Id: "I", delayTime: 100, text: "About"},

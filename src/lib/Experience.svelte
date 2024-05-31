@@ -11,8 +11,8 @@
                 'Work alongside stakeholders to lead the research, development, and architecture of technical solutions to fulfill business requirements',
                 'Provide personal leadership within engineering department through being resourceful in field research, knowledge shares, and mentorship'
             ]},
-        { name: 'Aniwave', title: 'Moderator and Tool Developer @ Aniwave', period: 'January 2021 - Present', details: [
-                'Assist in the development of a custom moderation tool to streamline the moderation process that allows moderators to easily moderate with a dashboard and discord with Python, HTML and CSS.',
+        { name: 'Aniwave', title: 'Mod & Tool Developer @ Aniwave - Community', period: 'January 2021 - Present', details: [
+                'Assist in the development of a custom moderation tool to streamline the moderation process that allows moderators to easily moderate with a dashboard using Disqus and Discord API with Python, HTML and CSS.',
                 'Pair programming with the lead developer to ensure the tool is production ready and meets the requirements of the moderation team.',
                 'Act as a community moderator, ensuring adherence to community guidelines and maintaining a positive user environment by managing and resolving user reports and disputes.'
             ]},
