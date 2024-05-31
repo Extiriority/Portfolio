@@ -58,7 +58,7 @@
     </div>
     <div in:fly={{delay: 1200, x: -40, duration: 250}} class="font-thin md:text-lg text-muted pt-8 w-10/12 sm:w-3/4 lg:w-3/4 2xl:1/2 italic">
         I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences.
-        Currently, I’m focused on building an accessible portfolio to show off my work.
+        Currently, I’m focused on building an accessible portfolio to show off my work and seeking my final graduation internship FALL 2024.
     </div>
 </div>
 
