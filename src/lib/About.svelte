@@ -3,6 +3,7 @@
     import { inview } from 'svelte-inview';
     import pfp from '../assets/giang.jpg';
 
+    let currentAge = new Date().getFullYear() - 2000 - (new Date().getMonth() == 11 && new Date().getDate() >= 21 ? 0 : 1);
     let isInView;
 </script>
 
@@ -23,7 +24,7 @@
             <div class="sm:flex pt-6 xl:w-[700px] lg:w-[550px]">
                 <div>
                     <p in:fly={{delay: 300, y: 40, duration: 300}} class="text-muted 2xl text-left md:pr-6 pr-0 pb-6">
-                        Dear  viewer, my name is Giang. I'm a 23-year-old Dutch developer from The Netherlands that is currently studying Computer Science at
+                        Dear viewer, my name is Giang. I'm a {currentAge}-year-old Dutch developer from The Netherlands that has been recently graduated cum laude from Computer Science at
                         <a href="https://fontys.edu/Home.htm" target="_blank" class="text-touch hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-1 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-touch before:absolute before:left-0 before:bottom-0">Fontys University of Applied Sciences</a>
                         in <a href="https://www.mind-labs.eu/en/" target="_blank" class="text-touch hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-1 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-touch before:absolute before:left-0 before:bottom-0">Tilburg Mindlabs</a>
                         and <a href="https://brainporteindhoven.com/en/" target="_blank" class="text-touch hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-1 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-touch before:absolute before:left-0 before:bottom-0">Brainport Eindhoven</a>.
@@ -34,7 +35,9 @@
                         Although I also do love to create beautiful and responsive websites.
                     </p>
                     <p in:fly={{delay: 300, y: 40, duration: 300}} class="text-muted 2xl text-left md:pr-6 pr-0 pb-12">
-                        My current work is maintaining and developing new features for
+                        My final graduation thesis at <a href="https://www.asml.com/en"  target="_blank" class="text-touch hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-1 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-touch before:absolute before:left-0 before:bottom-0">ASML</a>
+                        was about Autofac Dependency and object lifetime Visualization Tool for <a href="https://www.asml.com/en/products/metrology-and-inspection-systems/yieldstar-500"  target="_blank" class="text-touch hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-1 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-touch before:absolute before:left-0 before:bottom-0">YieldStar</a>.
+                        Other previous work is maintaining and developing new features for
                         <a href="https://github.com/FontysIPost" target="_blank" class="text-touch hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-1 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-touch before:absolute before:left-0 before:bottom-0">Fontys IPost</a>,
                         help on open-source projects like <a href="https://github.com/PreMiD/Presences" target="_blank" class="text-touch hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-1 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-touch before:absolute before:left-0 before:bottom-0">PreMiD</a>,
                         and worked on project on Disqus moderation panel on the <a href="https://github.com/9anime-Disqus" target="_blank" class="text-touch hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-1 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-touch before:absolute before:left-0 before:bottom-0">biggest streaming platform</a>.

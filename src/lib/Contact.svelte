@@ -20,9 +20,9 @@
                 Contact me
             </h2>
             <p in:fly={{delay: 300, y: 40, duration: 300}} class="text-muted 2xl:px-52 pb-12">
-                So far I have reached my final year of my Fontys University for Bachelor of Science (BSc.) in the field of Software Engineering.
-                At this moment, I have done my internship at CPMLive and did a semester course on Enterprise software engineering on Cloud and Microservices architecture,
-                advanced Gamedesign and Technology, and now Exchange abroad in Japan, but you can always contact me for future endeavors!
+                So far, I have graduated my Bachelor of Science (BSc.) with cum laude at Fontys University in the field of Software Engineering.
+                Until now, I have done my graduation internship at ASML and did a semester course on Enterprise software engineering on Cloud and Microservices architecture,
+                exchanged abroad in Japan, and now prep for master studies; but you can always contact me for future endeavors!
             </p>
             <div class="flex justify-center">
                 <button in:fly="{{delay: 550, y: -20, duration: 400 }}"
