@@ -1,6 +1,8 @@
 <script lang="ts">
     import { fly } from 'svelte/transition';
     import { inview } from 'svelte-inview';
+    import ASML from "../assets/asml.svg";
+    import ASMLBanner from "../assets/ASMLBanner.mp4";
     import CM from "../assets/cm.png";
     import CMBanner from "../assets/CMBanner.png";
     import iPost from  "../assets/ipost.png";
@@ -11,6 +13,17 @@
 
     let isInView;
     let projects = [
+        {
+            id: 0,
+            title: "ASML Dependency Injection Visualizer",
+            body: "Developed a real-time visualization tool by simplifying complexity by deconstruction and visualization of Dependency Hypergraphs and object lifetimes across 1,300+ Autofac-driven projects in YieldStar.",
+            stack: "C#, .NET8, Autofac, Microsoft Automation Graph Layout (MSAGL), Windows Presentation Foundation (WPF) and Remote Procedure Calls (gRPC)",
+            banner: ASMLBanner,
+            isVideo: true,
+            logo: ASML,
+            link: "https://www.asml.com/en/products/metrology-and-inspection-systems/yieldstar-500",
+            repo: "https://github.com/Extiriority/AutofacgRPC"
+        },
         {
             id: 1,
             title: "CM.com Validation of MO/MT Messages Workflow",

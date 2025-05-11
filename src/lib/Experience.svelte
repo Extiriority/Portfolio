@@ -3,15 +3,21 @@
     import { inview } from 'svelte-inview';
 
     let isInView;
-    let selectedJob = 'CPMLive';
+    let selectedJob = 'ASML';
 
     const jobs = [
+        { name: 'ASML', title: 'Software Engineer, YieldStar Department @ ASML Dependency Injection visualizer', period: 'September 2024 – January 2025', details: [
+                'Developed a real-time visualization tool to analyze object lifetimes and dependency graphs across 1,300+ Autofac-driven projects in YieldStar.',
+                'Engineered a runtime data pipeline using gRPC between a custom modified Autofac client and a WPF-based DVTool to dynamically capture and visualize component registrations and resolutions.',
+                'Designed interactive graph features using MSAGL with UML-inspired layouts, highlighting circular dependencies, singleton conflicts, and hierarchical scopes.',
+                'Collaborated with architects and developers to translate system complexity into visual insights, improving debugging efficiency and architectural transparency.',
+            ]},
         { name: 'CPMLive', title: 'Software Intern @ CPMLive - Feedback System', period: 'August 2022 – January 2023', details: [
                 'Deliver high-quality, robust Feedback System production ready code for the internal CPMLive analytics and forecasting platform using Express.js, Vue.js, and TypeScript',
                 'Work alongside stakeholders to lead the research, development, and architecture of technical solutions to fulfill business requirements',
                 'Provide personal leadership within engineering department through being resourceful in field research, knowledge shares, and mentorship'
             ]},
-        { name: 'Aniwave', title: 'Mod & Tool Developer @ Aniwave - Community', period: 'January 2021 - Present', details: [
+        { name: 'Aniwave', title: 'Mod & Tool Developer @ Aniwave - Community', period: 'January 2021 - March 2024', details: [
                 'Assist in the development of a custom moderation tool to streamline the moderation process that allows moderators to easily moderate with a dashboard using Disqus and Discord API with Python, HTML and CSS.',
                 'Pair programming with the lead developer to ensure the tool is production ready and meets the requirements of the moderation team.',
                 'Act as a community moderator, ensuring adherence to community guidelines and maintaining a positive user environment by managing and resolving user reports and disputes.'
