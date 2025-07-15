@@ -38,8 +38,8 @@
         {
             id: 2,
             title: "Fontys Internal Post Platform (FIPost)",
-            body: "An opensource project that aims to modernise the internal post system of Fontys tracking and scanning packages. This is a multi year long term project with me as the head maintainer.",
-            stack: "C#, .NET6, postgre  SQL, Vue.js, TypeScript, SCSS, Azure, K8s, rabbitMQ, Cypress, SonarCloud",
+            body: "An open-source project that aims to modernise the internal post system of Fontys tracking and scanning packages. This is a multi year long term project with me as the head maintainer.",
+            stack: "C#, .NET6, PostgreSQL, Vue.js, TypeScript, SCSS, Azure, K8s, rabbitMQ, Cypress, SonarCloud",
             banner: iPostBanner,
             isVideo: true,
             logo: iPost,
