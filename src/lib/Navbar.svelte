@@ -60,7 +60,7 @@
                 <li class="pr-6">
                     <a in:fly="{{delay: 550, y: -20, duration: 400 }}"
                             class="flex hover:text-touch py-1 rounded-md border-touch hover:border-b hover:border-t ease-in-out duration-200"
-                            href="{resume}" target="_blank">
+                            href={resume} target="_blank">
                         <div class="flex text-center pl-1 py-1">
                             <img src={popout} alt="popout icon" class="pr-2 center">
                             <div>Resume</div>
