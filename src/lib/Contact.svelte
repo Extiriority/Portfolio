@@ -20,9 +20,9 @@
                 Contact me
             </h2>
             <p in:fly={{delay: 300, y: 40, duration: 300}} class="text-muted 2xl:px-52 pb-12">
-                So far, I have graduated my Bachelor of Science (BSc.) with cum laude at Fontys University in the field of Software Engineering.
-                Until now, I have done my graduation internship at ASML and did a semester course on Enterprise software engineering on Cloud and Microservices architecture,
-                exchanged abroad in Japan, and now prep for master studies; but you can always contact me for future endeavors!
+                I graduated cum laude with a Bachelor of Science in Software Engineering from Fontys University and I’m currently pursuing a Master in Applied Quantum Computing.
+                Along the way, I completed my graduation internship at ASML, followed enterprise software engineering studies in cloud and microservices architecture, and joined an exchange abroad in Japan.
+                I’m always open to connecting about future opportunities and interesting collaborations.
             </p>
             <div class="flex justify-center">
                 <button in:fly="{{delay: 550, y: -20, duration: 400 }}"
