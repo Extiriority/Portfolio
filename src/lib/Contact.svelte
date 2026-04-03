@@ -3,13 +3,13 @@
     import { inview } from 'svelte-inview';
     import popout from "../assets/popout.svg";
 
-    let isInView;
+    let isInView = false;
 </script>
 
 <section class="grid gap-4 text-center"
          use:inview={{ unobserveOnEnter: true, rootMargin: '-5%' }}
-         on:change={({ detail }) => {
-         isInView = detail.inView;
+         on:change={(event) => {
+         isInView = (event as unknown as CustomEvent<{ inView: boolean }>).detail.inView;
     }}>
     <div class="min-h-[500px] pt-28">
         {#if isInView}
@@ -27,7 +27,7 @@
             <div class="flex justify-center">
                 <button in:fly="{{delay: 550, y: -20, duration: 400 }}"
                         class="flex items-center text-touch border rounded-sm border-touch px-5 py-3 hover:bg-ease hover:px-6 ease-in-out duration-200"
-                        onclick="window.open('mailto:VHG.Trang@gmail.com')">
+                        on:click={() => window.open('mailto:VHG.Trang@gmail.com')}>
                     Mail me
                     <img src={popout} alt="popout icon" class="pl-2">
                 </button>

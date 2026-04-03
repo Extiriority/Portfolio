@@ -2,7 +2,7 @@
     import { fly } from 'svelte/transition';
     import { inview } from 'svelte-inview';
 
-    let isInView;
+    let isInView = false;
     let selectedJob = 'TNO';
 
     const jobs = [
@@ -33,8 +33,8 @@
 
 <section class="grid pb-20 gap-4"
          use:inview={{ unobserveOnEnter: true, rootMargin: '-5%' }}
-         on:change={({ detail }) => {
-             isInView = detail.inView;
+         on:change={(event) => {
+             isInView = (event as unknown as CustomEvent<{ inView: boolean }>).detail.inView;
          }}>
     <div class="min-h-[375px] py-24 sm:py-40">
         {#if isInView}
