@@ -2,7 +2,7 @@
     import { fly } from "svelte/transition";
     import { onMount } from "svelte";
 
-    const updateDate: [number, number, number] = [2025, 5, 11];
+    const updateDate: [number, number, number] = [2026, 4, 3];
     const currentDate: [number, number, number] = [new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate(),];
     const sameYear = updateDate[0] == currentDate[0];
     const sameMonth = updateDate[1] == currentDate[1];
@@ -92,8 +92,8 @@
         I build things for the future.
     </div>
     <div in:fly={{delay: 1200, x: -40, duration: 250}} class="font-thin md:text-lg text-muted pt-8 w-10/12 sm:w-3/4 lg:w-3/4 2xl:1/2 italic">
-        I’m a software engineer specializing in building (and occasionally designing) exceptional digital and robust experiences.
-        My work blends architecture, visualization, and usability to solve real-world problems. Right now, I'm building an accessible portfolio to showcase my projects and prepare for a pre-master trajectory.
+        I’m a software engineer specializing in building exceptional, robust digital experiences.
+        My work blends architecture, visualization, and usability to solve real-world problems. Right now, I’m pursuing a Master in Applied Quantum Computing while continuing to build software at the intersection of engineering and emerging technology.
     </div>
     <div in:fly={{delay: 1300, x: -40, duration: 250}} class="font-thin md:text-xs text-gray-300 pt-3 w-10/12 sm:w-3/4 lg:w-3/4 2xl:1/2 italic">
         Updated since: {date}

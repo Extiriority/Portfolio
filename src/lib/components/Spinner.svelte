@@ -3,5 +3,5 @@
 </script>
 
 <div class="min-h-screen flex flex-col justify-evenly items-center relative ">
-    <img src={spinner}>
+    <img src={spinner} alt="Loading">
 </div>

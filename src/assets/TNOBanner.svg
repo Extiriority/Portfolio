@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">AutoProbeRT banner</title>
+  <desc id="desc">Abstract technical banner for the TNO probe station automation project</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08111f"/>
+      <stop offset="55%" stop-color="#12345b"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <g opacity="0.18" stroke="#93c5fd">
+    <path d="M0 160h1200"/>
+    <path d="M0 290h1200"/>
+    <path d="M0 420h1200"/>
+    <path d="M170 0v675"/>
+    <path d="M410 0v675"/>
+    <path d="M650 0v675"/>
+    <path d="M890 0v675"/>
+  </g>
+  <rect x="86" y="92" width="1028" height="492" rx="34" fill="url(#panel)" stroke="#dbeafe" stroke-opacity="0.18"/>
+  <g fill="#e2e8f0">
+    <rect x="144" y="150" width="226" height="42" rx="12" opacity="0.85"/>
+    <rect x="144" y="218" width="308" height="18" rx="9" opacity="0.45"/>
+    <rect x="144" y="250" width="276" height="18" rx="9" opacity="0.32"/>
+  </g>
+  <g>
+    <rect x="142" y="320" width="478" height="184" rx="24" fill="#020617" fill-opacity="0.36" stroke="#f8fafc" stroke-opacity="0.12"/>
+    <circle cx="222" cy="376" r="22" fill="#34d399"/>
+    <circle cx="320" cy="376" r="22" fill="#34d399"/>
+    <circle cx="418" cy="376" r="22" fill="#fbbf24"/>
+    <circle cx="516" cy="376" r="22" fill="#34d399"/>
+    <path d="M222 376h294" stroke="#cbd5e1" stroke-dasharray="10 10" opacity="0.55"/>
+    <path d="M222 376v78h294v-78" stroke="#22d3ee" stroke-width="4" fill="none" opacity="0.7"/>
+  </g>
+  <g>
+    <rect x="676" y="150" width="376" height="354" rx="24" fill="#020617" fill-opacity="0.34" stroke="#f8fafc" stroke-opacity="0.12"/>
+    <path d="M720 420c52-128 114-196 163-196 40 0 65 53 99 53 26 0 46-30 70-70" stroke="#22c55e" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <g fill="#f8fafc">
+      <circle cx="720" cy="420" r="10"/>
+      <circle cx="883" cy="224" r="10"/>
+      <circle cx="982" cy="277" r="10"/>
+      <circle cx="1052" cy="207" r="10"/>
+    </g>
+    <rect x="720" y="454" width="120" height="16" rx="8" fill="#e2e8f0" opacity="0.55"/>
+    <rect x="854" y="454" width="76" height="16" rx="8" fill="#34d399" opacity="0.85"/>
+    <rect x="944" y="454" width="76" height="16" rx="8" fill="#f87171" opacity="0.85"/>
+  </g>
+  <text x="146" y="560" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">TNO - AutoProbeRT</text>
+  <text x="146" y="605" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="24">Probe station automation, image targeting, measurement orchestration</text>
+</svg>

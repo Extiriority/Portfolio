@@ -19,6 +19,49 @@
         menu.set(show)
     }
 
+    function getNavbarOffset() {
+        const navbar = document.getElementById("navbar");
+        return navbar ? navbar.getBoundingClientRect().height + 12 : 96;
+    }
+
+    function scrollToSection(sectionId: string) {
+        const target = document.getElementById(sectionId);
+        if (!target) return;
+
+        const offset = getNavbarOffset();
+        const top = window.scrollY + target.getBoundingClientRect().top - offset;
+
+        window.scrollTo({
+            top: Math.max(0, top),
+            behavior: "smooth",
+        });
+    }
+
+    function navigateToSection(event: MouseEvent, sectionId: string) {
+        event.preventDefault();
+
+        if (show) {
+            show = false;
+            menu.set(false);
+        }
+
+        history.replaceState(null, "", `#${sectionId}`);
+
+        scrollToSection(sectionId);
+        requestAnimationFrame(() => scrollToSection(sectionId));
+
+        let attempts = 0;
+        const maxAttempts = 12;
+        const interval = setInterval(() => {
+            scrollToSection(sectionId);
+            attempts++;
+
+            if (attempts >= maxAttempts) {
+                clearInterval(interval);
+            }
+        }, 120);
+    }
+
     let prevPos = Number.MAX_SAFE_INTEGER;
     let isScrolledToTop = true;
 
@@ -47,7 +90,7 @@
                 {#each links as link}
                     <li>
                         <a in:fly="{{delay: link.delayTime, y: -20, duration: 400 }}"
-                           on:click={toggleNavBar}
+                           on:click={(event) => navigateToSection(event, link.text)}
                            class="flex hover:text-touch duration-200 border-touch hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-1 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-touch before:absolute before:left-0 before:bottom-0"
                            href="#{link.text}">
                             <div class="md:flex text-center py-1">
@@ -62,7 +105,7 @@
                             class="flex hover:text-touch py-1 rounded-md border-touch hover:border-b hover:border-t ease-in-out duration-200"
                             href={resume} target="_blank">
                         <div class="flex text-center pl-1 py-1">
-                            <img src={popout} alt="popout icon" class="pr-2 center">
+                            <img src={popout} alt="popout icon" class="pr-2 center w-6 h-6 self-center">
                             <div>Resume</div>
                         </div>
                     </a>
