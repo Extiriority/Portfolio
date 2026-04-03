@@ -68,7 +68,10 @@
     window.onscroll = function() {
         const currentPos = window.scrollY;
         isScrolledToTop = currentPos === 0;
-        document.getElementById("navbar").style.top = prevPos > currentPos ? "0" : "-85px"
+        const navbar = document.getElementById("navbar");
+        if (navbar) {
+            navbar.style.top = prevPos > currentPos ? "0" : "-85px";
+        }
 
         prevPos = currentPos;
     }

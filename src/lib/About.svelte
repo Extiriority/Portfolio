@@ -4,13 +4,13 @@
     import pfp from '../assets/giang.jpg';
 
     let currentAge = new Date().getFullYear() - 2000 - (new Date().getMonth() == 11 && new Date().getDate() >= 21 ? 0 : 1);
-    let isInView;
+    let isInView = false;
 </script>
 
 <section class="grid gap-4 text-left pb-20 justify-center"
         use:inview={{ unobserveOnEnter: true, rootMargin: '-5%' }}
-         on:change={({ detail }) => {
-         isInView = detail.inView;
+         on:change={(event) => {
+         isInView = (event as unknown as CustomEvent<{ inView: boolean }>).detail.inView;
     }}>
     <div class="min-h-[300px] pb-28 pt-24">
         {#if isInView}
